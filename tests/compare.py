@@ -17,6 +17,8 @@ def compare(a, b):
                 compare(i, j)
 
     elif isinstance(b, (np.ndarray, numbers.Number)):
+        print(a)
+        print(b)
         assert np.allclose(a, b, atol=1e-6)
 
     elif isinstance(b, str):
